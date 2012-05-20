@@ -51,3 +51,13 @@ Xpdf
   fullscreen
     zoom is problematic but to zoom freely, press 0 (zero) *then* +/-
     zoom to width: w, height: h, fit page: z -- these also work
+
+vim + urxvt: $TERM screws up <S-F4>, for example. hint on 
+    PLUS different codes in console/FreeBSD?
+        http://vim.1045645.n5.nabble.com/About-Shift-Space-td1185567.html
+        to do
+        if &term=='rxvt-unicode'
+          set <F4>=<F4>
+          set <S-F4>=<S-F4>
+        ndif
+      But it still does not work - find solution!
