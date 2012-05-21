@@ -61,3 +61,13 @@ vim + urxvt: $TERM screws up <S-F4>, for example. hint on
           set <S-F4>=<S-F4>
         ndif
       But it still does not work - find solution!
+
+
+If apt-get dist-upgrade ends with, 
+
+  E: Internal error: APT::pkgPackageManager::MaxLoopCount reached in SmartConfigure for netbase:amd64, aborting
+  E: Internal error: APT::pkgPackageManager::MaxLoopCount reached in SmartConfigure for libghc-xmonad-contrib-dev:amd64, aborting
+
+  $ sudo apt-get install apt
+
+  worked for me, at least :)
