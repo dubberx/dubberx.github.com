@@ -78,4 +78,7 @@ Dell Latitude D430 - ACPI suspend
   BUT
    * Suspend on close lid, edit /etc/acpi/actions/lm_lid.sh - add something like grep -q -v open/proc/acpi/button/lid/LID/state ; then sudo s2ram
    * low battery: poll acpi(1) in crontab, run s2both when below 4%.
+   Links:
+     Suspend / acpi actions: http://www.linuxquestions.org/questions/slackware-14/dell-laptop-lid-issue-on-slack-12-a-636177/
+     Brightness is always after resume: https://bugs.launchpad.net/ubuntu/+source/linux/+bug/876711
 
