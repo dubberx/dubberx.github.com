@@ -71,3 +71,11 @@ If apt-get dist-upgrade ends with,
   $ sudo apt-get install apt
 
   worked for me, at least :)
+
+
+Dell Latitude D430 - ACPI suspend
+  works fine, s2ram, s2disk, s2both:
+  BUT
+   * Suspend on close lid, edit /etc/acpi/actions/lm_lid.sh - add something like grep -q -v open/proc/acpi/button/lid/LID/state ; then sudo s2ram
+   * low battery: poll acpi(1) in crontab, run s2both when below 4%.
+
